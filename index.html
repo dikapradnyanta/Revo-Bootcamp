@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <header> 
+        <h1>Kalkulator Segitiga</h1>
+    </header>
+    <link rel="stylesheet" href="style.css"> 
+    <title>Kalkulator Segitiga</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="calculator-options">
+        <button onclick="setInputCalculator('luas')">Luas</button>
+        <button onclick="setInputCalculator('Keliling')">Keliling</button>
+    </div>
+    <img src="https://etc.usf.edu/clipart/36700/36738/tri17_36738_lg.gif" alt="Triangle" sizes="200px"> <!-- Perbaikan penulisan "Triangle" -->
+    
+    <div id="calculator-grid">
+        <h2>Tinggi Segitiga</h2>
+        <input id="input-height" type="number">
+        <h2>Alas Segitiga</h2> 
+        <input id="input-weight" type="number">
+    </div>
+
+    <button id="calculated" onclick="handleClick()">Hitung</button>
+    <button id="reset-button" onclick="resetHandle()">Reset</button>
+    <div id="result"></div>
+</body>
+</html>
